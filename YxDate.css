@@ -1,0 +1,79 @@
+.yxdate *{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.yxdate{
+    width: 274px;
+    height: 324px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    background-color: #fff;
+    color: #666;
+}
+.yxdate .other{
+    color: #cccccc;
+}
+.yxdate .content{
+    width: 272px;
+    height: 230px;
+   
+    padding: 10px;
+}
+.yxdate table{
+    width: 252px;
+    height: 210px;
+}
+.yxdate th{
+    font-weight: 400;
+    color: #333;
+}
+.yxdate td{
+    width: 36px;
+    height: 30px;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.yxdate td:hover{
+    background: #f2f2f2;
+    color: #666666;
+}
+.yxdate .nowDay{
+    background-color: #009688!important;
+    color: #ffffff!important;
+}
+.yxdate .header i{
+    position: absolute;
+    top: 15px;
+    display: inline-table;
+    
+    cursor: pointer;
+}
+.yxdate .header .nowDateTime{
+    position:absolute;
+    top: 15px;
+    left: 90px;
+}
+.yxdate .prevYear{
+    left: 15px;
+}
+.yxdate .prevMonth{
+    left: 45px;
+}
+.yxdate .nextMonth{
+    right: 45px;
+}
+.yxdate .nextYear{
+    right: 15px;
+}
+.yxdate .header{
+    border-bottom: 1px solid #e2e2e2;
+    height: 45px;
+    position: relative;
+    line-height: 30px;
+
+}

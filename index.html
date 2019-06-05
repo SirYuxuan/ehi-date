@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        .yxdate .nowDay{
-            background: red;
-        }
-        .yxdate .other{
-            color: #cccccc;
-        }
-    </style>
+    <link rel="stylesheet" href="./YxDate.css">
 </head>
+
 <body>
-    <input type="text" id="date">
+    <input type="text" id="date1">
 
 
     <script src="./YxDate.js"></script>
     <script>
-       var date = new YxDate({
-           elem:'#date',
-           event:'click'
-       });
-       date.setLanguage({
-        'weeks':['Su','Mo','Tu','We','Th','Fr','Sa']
-       });
-       date.getCalendar(2019,6);
+        var date = new YxDate({
+            elem: '#date1',
+            event: 'click',
+            language:{
+                'weeks': ['日', '一', '二', '三', '四', '五', '六']
+            },
+            dayChoose(time) {
+                console.log('时间选择回调,当前选择时间:' + time);
+                return time + ' 00:00:00';
+            }
+        });
     </script>
 </body>
+
 </html>
