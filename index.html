@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .yxdate .nowDay{
+            background: red;
+        }
+        .yxdate .other{
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="date">
+
+
+    <script src="./YxDate.js"></script>
+    <script>
+       var date = new YxDate({
+           elem:'#date',
+           event:'click'
+       });
+       date.setLanguage({
+        'weeks':['Su','Mo','Tu','We','Th','Fr','Sa']
+       });
+       date.getCalendar(2019,6);
+    </script>
+</body>
+</html>
