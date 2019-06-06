@@ -1,0 +1,11 @@
+{
+  "name": "yxdate",
+  "version": "1.0.0",
+  "description": "#### Description Js日期选择器",
+  "main": "YxDate_Old.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

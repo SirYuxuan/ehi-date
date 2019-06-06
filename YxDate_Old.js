@@ -1,4 +1,4 @@
-class YxDate {
+class YxDate1 {
     bindTimeDomClick(elem){
         this.elem = elem;
         var dateDom = document.querySelector(elem);
@@ -201,7 +201,7 @@ class YxDate {
                 if(month + time < 0){
                     month = 11;
                     year --;
-                }else{ 
+                }else{
                     month += time;
                 }
             }
