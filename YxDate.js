@@ -201,7 +201,7 @@ class YxDate {
                 if(month + time < 0){
                     month = 11;
                     year --;
-                }else{
+                }else{ 
                     month += time;
                 }
             }
